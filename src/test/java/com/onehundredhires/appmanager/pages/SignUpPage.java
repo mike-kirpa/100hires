@@ -11,21 +11,18 @@ public class SignUpPage extends AbstractPage{
     }
 
     public void enterInFirstNameField(String firstname) throws InterruptedException {
-        Thread.sleep(1000);
         waitForPageLoad("SignUpPage.FirstNameField");
         driver.findElement(Locators.get("SignUpPage.FirstNameField")).click();
         driver.findElement(Locators.get("SignUpPage.FirstNameField")).sendKeys(firstname);
     }
 
     public void enterInLastNameField(String lastname) throws InterruptedException {
-        Thread.sleep(1000);
         waitForPageLoad("SignUpPage.LastNameField");
         driver.findElement(Locators.get("SignUpPage.LastNameField")).click();
         driver.findElement(Locators.get("SignUpPage.LastNameField")).sendKeys(lastname);
     }
 
     public void enterInCompanyNameField(String companyname) throws InterruptedException {
-        Thread.sleep(1000);
         waitForPageLoad("SignUpPage.CompanyNameField");
         driver.findElement(Locators.get("SignUpPage.CompanyNameField")).click();
         driver.findElement(Locators.get("SignUpPage.CompanyNameField")).sendKeys(companyname);
@@ -57,8 +54,12 @@ public class SignUpPage extends AbstractPage{
     }
 
     public void clickOnNextQuestion() throws InterruptedException {
-        Thread.sleep(1000);
         waitForPageLoad("SignUpPage.NextQuestionButton");
         driver.findElement(Locators.get("SignUpPage.NextQuestionButton")).click();
     }
+
+    public void clickOnCreateAccountButton(){
+        driver.findElement(Locators.get("SignUpPage.CreateAccount")).click();
+    }
+
 }
