@@ -1,8 +1,8 @@
-package com.projectname.appmanager;
+package com.onehundredhires.appmanager;
 
 import com.browserstack.local.Local;
-import com.projectname.appmanager.helpers.GetProperties;
-import com.projectname.appmanager.helpers.RestAPI;
+import com.onehundredhires.appmanager.helpers.GetProperties;
+import com.onehundredhires.appmanager.helpers.RestAPI;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.openqa.selenium.WebDriver;

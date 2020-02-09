@@ -1,6 +1,6 @@
-package com.projectname.appmanager.pages;
+package com.onehundredhires.appmanager.pages;
 
-import com.projectname.appmanager.helpers.Locators;
+import com.onehundredhires.appmanager.helpers.Locators;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;

@@ -1,4 +1,4 @@
-package com.projectname.tests;
+package com.onehundredhires.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

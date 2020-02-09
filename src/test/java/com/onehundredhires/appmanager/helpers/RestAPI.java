@@ -1,4 +1,4 @@
-package com.projectname.appmanager.helpers;
+package com.onehundredhires.appmanager.helpers;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

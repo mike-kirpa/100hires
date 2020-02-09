@@ -1,4 +1,4 @@
-package com.projectname.appmanager.helpers;
+package com.onehundredhires.appmanager.helpers;
 
 import java.io.File;
 import java.io.FileReader;

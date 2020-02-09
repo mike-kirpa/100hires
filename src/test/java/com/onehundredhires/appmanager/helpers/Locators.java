@@ -1,4 +1,4 @@
-package com.projectname.appmanager.helpers;
+package com.onehundredhires.appmanager.helpers;
 
 import org.openqa.selenium.By;
 

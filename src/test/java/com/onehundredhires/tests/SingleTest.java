@@ -1,6 +1,6 @@
-package com.projectname.tests;
+package com.onehundredhires.tests;
 
-import com.projectname.appmanager.helpers.Locators;
+import com.onehundredhires.appmanager.helpers.Locators;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
