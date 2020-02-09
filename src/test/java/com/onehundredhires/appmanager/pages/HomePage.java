@@ -14,7 +14,7 @@ public class HomePage extends AbstractPage {
     }
 
     public void clickOnGetStartedButton(){
-        driver.findElement(Locators.get("HomePage.EmailField"));
+        driver.findElement(Locators.get("HomePage.GetStartedButton")).click();
     }
 
     public SignUpPage signUp(String email){

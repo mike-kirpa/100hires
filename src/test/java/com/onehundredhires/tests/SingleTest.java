@@ -1,8 +1,7 @@
 package com.onehundredhires.tests;
 
-import com.onehundredhires.appmanager.helpers.Locators;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+import com.onehundredhires.appmanager.pages.HomePage;
+import com.onehundredhires.appmanager.pages.SignUpPage;
 import org.testng.annotations.Test;
 
 
@@ -11,11 +10,22 @@ public class SingleTest extends TestBase {
     @Test()
     public void test() throws InterruptedException {
         app.driver.get(app.getProperties.value("URL"));
-        WebElement element = app.driver.findElement(Locators.get("q"));
-        element.sendKeys(app.getProperties.value("SearchingRequest"));
-        element.submit();
-        Thread.sleep(5000);
-
-        Assert.assertEquals(app.getProperties.value("ExpectedTitleBrowserStack"), app.driver.getTitle());
+        HomePage homePage = new HomePage(app.driver);
+        SignUpPage signUpPage = homePage.signUp(app.getProperties.value("ValidEmail"));
+        signUpPage.enterInFirstNameField(app.getProperties.value("ValidFirstName"));
+        signUpPage.clickOnNextQuestion();
+        signUpPage.enterInLastNameField(app.getProperties.value("ValidLastName"));
+        signUpPage.clickOnNextQuestion();
+        signUpPage.enterInCompanyNameField(app.getProperties.value("ValidCompanyName"));
+        signUpPage.clickOnNextQuestion();
+        signUpPage.enterInPhoneField(app.getProperties.value("ValidPhone"));
+        signUpPage.clickOnNextQuestion();
+        signUpPage.enterInCountOfEmployeesField(app.getProperties.value("ValidCountOfEmployees"));
+        signUpPage.clickOnNextQuestion();
+        signUpPage.enterInLocationField(app.getProperties.value("ValidLocation"));
+        signUpPage.clickOnNextQuestion();
+        signUpPage.enterInSiteUrlField(app.getProperties.value("ValidUrlSite"));
+        signUpPage.clickOnNextQuestion();
+        signUpPage.enterInPasswordField(app.getProperties.value("ValidPassword"));
     }
 }
